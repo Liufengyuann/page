@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/new_file.css" />
+		<link rel="stylesheet" href="fonts/iconfont.css" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	</head>
+
+	<body>
+		<div class="pre_header">
+			<div class="container">
+				<div class="left_header">
+					<p class="p1"><i class="icon iconfont">&#xe605;</i>375 Valencia St. San Francisco, CA 94103</p>
+					<p class="p2"><i class="icon iconfont">&#xf0021;</i>123456790</p>
+				</div>
+				<div class="middle_header">
+
+				</div>
+				<div class="right_header">
+					<input type="text" id="input_search" placeholder="搜索..." />
+					<input type="button" id="search" value="&#xe606;" class="icon iconfont" />
+					<ul class="search_recard">
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+
+		<div class="nav" id="nav">
+			<ul>
+				<li>
+					<a href="#">HOME</a>
+					<ul class="nav_drop">
+						<li>
+							<a href="#">JUSTIN</a>
+						</li>
+						<li>
+							<a href="#">JUSTIN</a>
+						</li>
+						<li>
+							<a href="#">JUSTIN</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">SHOWS</a>
+					<ul class="nav_drop">
+						<li>
+							<a href="#">JUSTIN</a>
+						</li>
+						<li>
+							<a href="#">JUSTIN</a>
+						</li>
+						<li>
+							<a href="#">JUSTIN</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">NEWS</a>
+					<ul class="nav_drop">
+						<li>
+							<a href="#">JUSTIN</a>
+						</li>
+
+					</ul>
+				</li>
+				<li>
+					<a href="#">SHOP</a>
+					<ul class="nav_drop">
+						<li>
+							<a href="#">JUSTIN</a>
+						</li>
+						<li>
+							<a href="#">JUSTIN</a>
+						</li>
+
+					</ul>
+				</li>
+				<li>
+					<a href="#">MUSIC</a>
+					<ul class="nav_drop">
+						<li>
+							<a href="#">JUSTIN</a>
+						</li>
+
+					</ul>
+				</li>
+				<li>
+					<a href="#">VEDIOS</a>
+					<ul class="nav_drop">
+						<li>
+							<a href="#">JUSTIN</a>
+						</li>
+						<li>
+							<a href="#">JUSTIN</a>
+						</li>
+						<li>
+							<a href="#">JUSTIN</a>
+						</li>
+					</ul>
+				</li>
+				<div class="clearfix"></div>
+			</ul>
+		</div>
+		
+		<!--移动端nav-->
+		<div class="slidenav">
+			<a href="#" class="button" id="slidbtu"></a>
+		</div>
+		    <ul class="slidenav_ul">
+				<li><a href="#">HOME</a><i class="icon iconfont">&#xe604;</i></li>
+				<li><a href="#">SHOWS</a><i class="icon iconfont">&#xe604;</i></li>
+				<li><a href="#">NEWS</a><i class="icon iconfont">&#xe604;</i></li>
+				<li><a href="#">SHOP</a><i class="icon iconfont">&#xe604;</i></li>
+				<li><a href="#">MUSIC</a><i class="icon iconfont">&#xe604;</i></li>
+				<li><a href="#">VEDIOS</a><i class="icon iconfont">&#xe604;</i></li>
+			</ul>
+			<script type="text/javascript">
+				var onoff=true;
+				var slidbtu=document.getElementById('slidbtu');
+				var slidUL=document.getElementsByClassName('slidenav_ul')[0];
+				var slidLi=slidUL.getElementsByTagName('li');
+				slidbtu.onclick=function(){
+					if(onoff==true){
+					slidUL.style.height=slidLi[0].offsetHeight*slidLi.length+'px';
+
+					onoff=false;
+					}
+					else{
+						slidUL.style.height=0;
+						onoff=true;
+					}
+				}
+				
+			</script>
+		<div class="banner">
+			<div class="carousel">
+				<div class="banner_top">
+					<div class="banner_top_bg_mask" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: #CCCCCC;z-index: 1000;opacity: 0.3;"></div>
+					<div class="banner_top_bg">
+						<img src="img/justinbieber.jpg" />
+						<img src="img/111.jpg" />
+						<img src="img/333.jpg" />
+						<img src="img/222.jpg" />
+						<img src="img/justinbieber.jpg" />
+					</div>
+
+					<ul class="banner_text">
+						<li>
+							<h2>Welcome to the JUSTIN BIEBER 1</h2>
+							<h3>Welcome to the JUSTIN BIEBER 1</h3>
+						</li>
+						<li>
+							<h2>Welcome to the JUSTIN BIEBER 2</h2>
+							<h3>Welcome to the JUSTIN BIEBER 2</h3>
+						</li>
+						<li>
+							<h2>Welcome to the JUSTIN BIEBER 3</h2>
+							<h3>Welcome to the JUSTIN BIEBER 3</h3>
+						</li>
+						<li>
+							<h2>Welcome to the JUSTIN BIEBER 4</h2>
+							<h3>Welcome to the JUSTIN BIEBER 4</h3>
+						</li>
+						<li>
+							<h2>Welcome to the JUSTIN BIEBER 5</h2>
+							<h3>Welcome to the JUSTIN BIEBER 5</h3>
+						</li>
+						<div class="clearfix"></div>
+					</ul>
+
+					<div id="pre">
+						<i class="icon iconfont">&#xe60e;</i>
+					</div>
+					<div id="next">
+						<i class="icon iconfont">&#xe60d;</i>
+					</div>
+
+				</div>
+				<div class="banner_bg">
+					<img src="img/justinbieber.jpg" />
+					<img src="img/111.jpg" />
+					<img src="img/333.jpg" />
+					<img src="img/222.jpg" />
+					<img src="img/justinbieber.jpg" />
+				</div>
+			</div>
+		</div>
+		<div class="tourNews">
+			<div class="tourPicture">
+				<a href="#">
+					<span class="line line-top"></span>
+					<span class="line line-bottom"></span>
+					<span class="line line-left"></span>
+					<span class="line line-right"></span>
+					<h3>Have a Look at PICTURES</h3>
+					<div class="imgwrapper">
+						<img src="img/timg (1).jpg" />
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<div class="button">
+						<i class="icon iconfont">&#xe6d1;</i>
+						<span>Browse Pictures</span>
+					</div>
+					<div class="clearfix"></div>
+				</a>
+			</div>
+			<div class="tourschedule">
+				<a href="#">
+					<span class="line line-top"></span>
+					<span class="line line-bottom"></span>
+					<span class="line line-left"></span>
+					<span class="line line-right"></span>
+					<h3>Have a Look at PICTURES</h3>
+					<div class="imgwrapper">
+						<img src="img/timg (2).jpg" />
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<div class="button">
+						<i class="icon iconfont">&#xe6d1;</i>
+						<span>Browse Pictures</span>
+					</div>
+					<div class="clearfix"></div>
+				</a>
+			</div>
+			<div class="tourBook">
+				<a href="#">
+					<span class="line line-top"></span>
+					<span class="line line-bottom"></span>
+					<span class="line line-left"></span>
+					<span class="line line-right"></span>
+					<h3>Have a Look at PICTURES</h3>
+					<div class="imgwrapper">
+						<img src="img/timg.jpg" />
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<div class="button">
+						<i class="icon iconfont">&#xe6d1;</i>
+						<span>Browse Pictures</span>
+					</div>
+					<div class="clearfix"></div>
+				</a>
+			</div>
+		</div>
+		<div class="upcoming">
+			<h1>Next Upcoming Event</h1>
+			<div class="coutdown">
+				<div class="days">
+					<p></p>
+					<span>days</span>
+				</div>
+				<div class="hours">
+					<p></p>
+					<span>hours</span>
+				</div>
+				<div class="minutes">
+					<p></p>
+					<span>minutes</span>
+				</div>
+				<div class="seconds">
+					<p></p>
+					<span>seconds</span>
+				</div>
+			</div>
+			<div class="tourIntro">
+				<div class="imgwrapper">
+					<img src="img/JustinBieber2.jpg" />
+				</div>
+				<div class="introInfo">
+					<h2>Purpose Tour IN CHINA</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ..</p>
+					<a href="#">EventInfo</a>
+				</div>
+			</div>
+		</div>
+		<div class="panel">
+			<div class="panel_text_mask"></div>
+			<div class="panel_text">
+				<h1>JUSTIN BIEBER  </h1>
+				<h4>JUSTIN BIEBER BIEBER BIEBER BIEBERJUSTIN BIEBER BIEBER BIEBER BIEBERJUSTIN BIEBER BIEBER BIEBER BIEBERJUSTIN BIEBER BIEBER BIEBER BIEBERJUSTIN BIEBER BIEBER BIEBER BIEBER</h4>
+			</div>
+		</div>
+		<div class="review">
+			<h1 class="review_title">
+				Tours Review
+			</h1>
+			<ul>
+				<li>
+					<div class="imgwrapper">
+						<img src="img/timg (2).jpg" />
+					</div>
+					<p>NEW YORK</p>
+					<div class="evaluate">
+						<p class="score">EVALUATE:</p>
+						<ul class="star">
+							<li><i class="icon iconfont">&#xe60a;</i></li>
+							<li><i class="icon iconfont">&#xe60a;</i></li>
+							<li><i class="icon iconfont">&#xe60a;</i></li>
+							<li><i class="icon iconfont">&#xe60a;</i></li>
+							<li><i class="icon iconfont">&#xe60a;</i></li>
+                            <div class="clearfix"></div>
+						</ul>
+						<p class="rank" class="rank"></p>
+
+					</div>
+					<a href="#">
+						<span>CONTINUE READING</span>
+					</a>
+				</li>
+				<li>
+					<div class="imgwrapper">
+						<img src="img/timg (2).jpg" />
+					</div>
+					<p>NEW YORK</p>
+					<div class="evaluate">
+						<p class="score">EVALUATE:</p>
+						<ul class="star">
+							<li><i class="icon iconfont">&#xe60a;</i></li>
+							<li><i class="icon iconfont">&#xe60a;</i></li>
+							<li><i class="icon iconfont">&#xe60a;</i></li>
+							<li><i class="icon iconfont">&#xe60a;</i></li>
+							<li><i class="icon iconfont">&#xe60a;</i></li>
+<div class="clearfix"></div>
+						</ul>
+						<p class="rank" class="rank"></p>
+						
+					</div>
+					<a href="#">
+						<span>CONTINUE READING</span>
+					</a>
+				</li>
+				<li>
+					<div class="imgwrapper">
+						<img src="img/timg (2).jpg" />
+					</div>
+					<p>NEW YORK</p>
+					<div class="evaluate">
+						<p class="score">EVALUATE:</p>
+						<ul class="star">
+							<li><i class="icon iconfont">&#xe60a;</i></li>
+							<li><i class="icon iconfont">&#xe60a;</i></li>
+							<li><i class="icon iconfont">&#xe60a;</i></li>
+							<li><i class="icon iconfont">&#xe60a;</i></li>
+							<li><i class="icon iconfont">&#xe60a;</i></li>
+							<div class="clearfix"></div>
+						</ul>
+						<p class="rank" class="rank"></p>
+					</div>
+					<a href="#">
+						<span>CONTINUE READING</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer">
+			<div class="footer_left">
+				<p>Ecpect ©2017 Purpose tours.</p>
+			</div>
+			<div class="footer_right">
+				<i class="icon iconfont">&#xe6d1;</i>
+				<i class="icon iconfont">&#xe632;</i>
+				<i class="icon iconfont">&#xf0021;</i>
+				<i class="icon iconfont">&#xe609;</i>
+				<i class="icon iconfont">&#xe606;</i>
+			</div>
+		</div>
+		<script type="text/javascript">
+			window.onload = function() {
+					//变头像
+					var intro = document.getElementsByClassName('tourIntro')[0];
+					var introImg = intro.getElementsByTagName('img')[0];
+					var introTimer;
+
+					function changeimg() {
+						var introImgList = ["img/JustinBieber2.jpg", "img/JustinBieber.jpg", "img/111.jpg", "img/222.jpg", "img/333.jpg", "img/timg.jpg"];
+						var random = parseInt(Math.random() * introImgList.length);
+						introImg.src = introImgList[random];
+					}
+					intro.onmouseover = function() {
+						introTimer = setInterval(function() {
+							changeimg();
+						}, 100);
+					}
+					intro.onmouseout = function() {
+						clearInterval(introTimer);
+
+					}
+
+					//倒计时
+					function coutDown() {
+						var newTime = new Date();
+						var stopTime = new Date("May 20,2018");
+						var coutdown = document.getElementsByClassName('coutdown')[0];
+						var timeList = coutdown.getElementsByTagName('p');
+						var seconds = 1;
+						var minutes = seconds * 60;
+						var hours = minutes * 60;
+						var days = hours * 24;
+						var intervalTime = (stopTime.getTime() - newTime.getTime()) / 1000;
+						timeList[0].innerHTML = Math.floor(intervalTime / days);
+						timeList[1].innerHTML = Math.floor((intervalTime - days * timeList[0].innerHTML) / hours);
+						timeList[2].innerHTML = Math.floor((intervalTime - days * timeList[0].innerHTML - hours * timeList[1].innerHTML) / minutes);
+						timeList[3].innerHTML = Math.floor((intervalTime - days * timeList[0].innerHTML - hours * timeList[1].innerHTML - minutes * timeList[2].innerHTML) / seconds);
+					}
+					window.setInterval(function() {
+						coutDown();
+					}, 1000);
+
+					//				搜索框
+					var search = document.getElementById('input_search');
+					var valueAdd = document.getElementById('search');
+					var recardUL = document.getElementsByClassName('search_recard')[0];
+					valueAdd.onclick = function() {
+						var recardLi = document.createElement('li');
+						var searchVal = search.value;
+						var txt = document.createTextNode(searchVal);
+						if(searchVal !== "") {
+							recardLi.appendChild(txt);
+							recardUL.appendChild(recardLi);
+							recardUL.style.height = (recardUL.childNodes.length - 1) * 30 + 'px';
+						}
+						var elemi = document.createElement('i');
+						elemi.className = 'del recard_more';
+						var deli = document.createTextNode('删除');
+						elemi.appendChild(deli);
+						recardLi.appendChild(elemi);
+						search.value = '';
+					}
+					recardUL.onclick = function(event) {
+						if(event.target.className == "del recard_more") { //event.target就代表在ul的所有子元素下当前点击的元素。
+							recardUL.removeChild(event.target.parentNode);
+						}
+						recardUL.style.height = (recardUL.childNodes.length - 1) * 30 + 'px';
+					}
+
+					//banner
+					var banLiwid = document.body.clientWidth;
+					var banTopbg = document.getElementsByClassName("banner_top_bg")[0];
+					var banTopimg = banTopbg.getElementsByTagName('img');
+					var banBg = document.getElementsByClassName('banner_bg')[0];
+					var banBgimg = banBg.getElementsByTagName('img');
+					var banText = document.getElementsByClassName('banner_text')[0];
+					var banTxtli = banText.getElementsByTagName('li');
+					var oPre = document.getElementById('pre');
+					var oNext = document.getElementById('next');
+					//				alert(banTopimg.length)
+					var banLilen = banTopimg.length;
+					banTopbg.style.width = banLiwid * banLilen + 'px';
+					banBg.style.width = banLiwid * banLilen + 'px';
+					banText.style.width = banLiwid * banLilen + 'px';
+					//				初始化每个部分的宽度
+					for(var i = 0; i < banLilen; i++) {
+						banTopimg[i].style.width = banLiwid + 'px';
+						banBgimg[i].style.width = banLiwid + 'px';
+						banTxtli[i].style.width = banLiwid + 'px';
+					}
+					var count = 0;
+					var autochange = function() {
+						if(parseInt(banText.offsetLeft) == -banLiwid * (banLilen - 1)) {
+							banTopbg.style.left = 0;
+							banBg.style.left = 0;
+							banText.style.left = 0;
+						} else {
+							banBg.style.left = parseInt(banBg.offsetLeft) - banLiwid + 'px';
+							banText.style.left = parseInt(banText.offsetLeft) - banLiwid + 'px';
+							banTopbg.style.left = parseInt(banTopbg.offsetLeft) - banLiwid + 'px';
+						}
+
+					}
+					var timer;
+					timer = setInterval(function() {
+						autochange();
+					}, 1500);
+					oNext.onclick = function() {
+						if(timer) {
+							clearTimeout(timer);
+							timer = null;
+						}
+						autochange();
+
+					}
+
+					oPre.onclick = function() {
+						if(timer) {
+							clearTimeout(timer);
+							timer = null;
+						}
+						if(parseInt(banText.offsetLeft) == 0) {
+							banTopbg.style.left = -banLiwid * (banLilen - 1) + 'px';
+							banBg.style.left = -banLiwid * (banLilen - 1) + 'px';
+							banText.style.left = -banLiwid * (banLilen - 1) + 'px';
+						} else {
+							banBg.style.left = parseInt(banBg.offsetLeft) + banLiwid + 'px';
+							banText.style.left = parseInt(banText.offsetLeft) + banLiwid + 'px';
+							banTopbg.style.left = parseInt(banTopbg.offsetLeft) + banLiwid + 'px';
+						}
+					}
+
+				}
+				// nav fixed
+			var nav = document.getElementById('nav');
+			window.addEventListener('scroll', function(event) {
+				var scrollTop = document.body.scrollTop;
+				if(scrollTop >= nav.offsetHeight)
+					nav.className = 'nav fixed';
+				else nav.className = 'nav';
+			}, false);
+
+			//打分
+			var oUL = document.getElementsByClassName('star');
+			var aI1= oUL[0].getElementsByTagName('li');
+			var aI2= oUL[1].getElementsByTagName('li');
+			var aI3= oUL[2].getElementsByTagName('li');
+			var rank = ['BEDER', 'BED', 'GOOD', 'GREAT', 'PREFECT'];
+			var aP = document.getElementsByClassName('rank');
+			
+			function www(aI,aP){
+			var beforestyle = function(classstyle){
+				for(var m = 0; m < aI.length; m++){
+					aI[m].className = classstyle;
+				}
+			}
+			beforestyle('before');
+			aP.innerHTML = rank[0];
+			for(var i = 0; i < aI.length; i++) {
+				aI[i].index = i;
+				aI[i].onclick = function() {
+					for(var j = 0; j <= this.index; j++) {
+						if(j <= 2) {
+							aI[j].className = 'mid';
+						} else {
+							for(var jj = 0; jj <= this.index; jj++) {
+								aI[jj].className = "after";
+							}
+						}
+					}
+				}
+				aI[i].onmouseover = function() {
+					beforestyle('before');
+					aP.innerHTML = rank[this.index];
+					for(var j = 0; j <= this.index; j++){
+						aI[j].className = 'after';
+					}
+				}
+				aI[i].onmouseout = function() {}
+			}
+			}
+			www(aI1,aP[0]);
+			www(aI2,aP[1]);
+			www(aI3,aP[2]);
+			
+		</script>
+
+	</body>
+
+</html>
